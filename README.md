@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/265bb6fe-38e0-44f1-a237-aed2a69a9f72/deploy-status)](https://app.netlify.com/sites/jovial-cori-819464/deploys)
