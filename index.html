@@ -28,6 +28,12 @@
             flex-direction: column;
         }
 
+        @media (prefers-color-scheme: no-preference) {
+            .dark-mode-on {
+                display: none;
+            }
+        }
+
         @media (prefers-color-scheme: light) {
             .dark-mode-on {
                 display: none;
