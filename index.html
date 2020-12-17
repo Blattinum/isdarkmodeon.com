@@ -20,7 +20,8 @@
             background-color: #f5f5f5;
             color: #2b2b2b;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 2.2rem;
+            font-size: 3.2rem;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -34,6 +35,10 @@
         }
 
         @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #2b2b2b;
+                color: #f5f5f5;
+            }
             .dark-mode-off {
                 display: none;
             }
@@ -44,10 +49,8 @@
 </head>
 <body>
     
-    <h1 class="dark-mode-off">Your browser's dark mode is off.</h1>
-    <h1 class="dark-mode-on">Your browser's dark mode is on.</h1>
-
-    <p>test</p>
+    <h1 class="dark-mode-off">your browser's dark mode is <mark>off</mark></h1>
+    <h1 class="dark-mode-on">your browser's dark mode is <mark>on</mark></h1>
 
 </body>
 </html>
