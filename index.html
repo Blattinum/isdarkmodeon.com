@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>is dark mode on?</title>
+    <title>isdarkmodeon.com</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -18,6 +18,26 @@
     <h1 class="dark-mode-off">nope, dark mode is <mark>off</mark></h1>
     <h1 class="dark-mode-on">yep, dark mode is <mark>on</mark></h1>
     <h1 class="no-pref">no preference set</h1>
+
+    <script> 
+        window.addEventListener('load', () => { 
+          registerSW(); 
+        }); 
+      
+        // Register the Service Worker 
+        async function registerSW() { 
+          if ('serviceWorker' in navigator) { 
+            try { 
+              await navigator 
+                    .serviceWorker 
+                    .register('sw.js'); 
+            } 
+            catch (e) { 
+              console.log('SW registration failed'); 
+            } 
+          } 
+        } 
+     </script>
 
 </body>
 </html>
