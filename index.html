@@ -38,6 +38,10 @@
             .dark-mode-on {
                 display: none;
             }
+            
+            .no-pref {
+                display: none;
+            }
         }
 
         @media (prefers-color-scheme: dark) {
@@ -54,6 +58,10 @@
             .dark-mode-off {
                 display: none;
             }
+
+            .no-pref {
+                display: none;
+            }
         }
 
     </style>
@@ -63,6 +71,7 @@
     
     <h1 class="dark-mode-off">your browser's dark mode is <mark>off</mark></h1>
     <h1 class="dark-mode-on">your browser's dark mode is <mark>on</mark></h1>
+    <h1 class="no-pref">you haven't set a light/dark mode preference</h1>
 
 </body>
 </html>
