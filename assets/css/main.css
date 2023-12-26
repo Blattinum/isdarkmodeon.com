@@ -20,6 +20,14 @@
             flex-direction: column;
         }
 
+        a {
+            color: chartreuse;
+        }
+
+        a:hover {
+            color: crimson;
+        }
+
         @media (prefers-color-scheme: no-preference) {
             .no-pref {
                 display: block;
